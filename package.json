@@ -1,7 +1,7 @@
 {
-  "name": "@dino-dna/react-tui",
+  "name": "@benas_mot/react-tui",
   "version": "0.0.1-semantic-release",
-  "description": "React in your terminal emulator",
+  "description": "React in your terminal emulator. Forked from @dino-dna/react-tui",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dino-dna/react-tui.git"
+    "url": "git+https://github.com/BenasMot/react-tui.git"
   },
   "files": [
     "src",
@@ -38,9 +38,9 @@
   "author": "cdaringe",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dino-dna/react-tui/issues"
+    "url": "https://github.com/BenasMot/react-tui/issues"
   },
-  "homepage": "https://github.com/dino-dna/react-tui#readme",
+  "homepage": "https://github.com/BenasMot/react-tui#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/register": "^7.9.0",
