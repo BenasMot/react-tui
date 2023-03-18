@@ -8,7 +8,6 @@
     "clean": "del 'dist' './*.log'",
     "format": "prettier '{docs,examples,run,src,test}/**/*.{md,ts,tsx}' './*.{md,ts,js}' --write",
     "postinstall": "patch-package",
-    "start": "DEBUG=reconciler:blessed nodemon --inspect -I examples/index",
     "test": "jest"
   },
   "repository": {
