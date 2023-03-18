@@ -9,5 +9,6 @@
     "rootDir": "./src",
     "declaration": true
   },
-  "exclude": ["examples/", "test/", "scripts/"]
+  "include": ["./src/", "./types/"],
+  "exclude": ["./examples/", "./test/", "./scripts/"]
 }
