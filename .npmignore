@@ -1,1 +1,6 @@
 **/*.yml
+.vscode/
+examples/
+src/
+test/
+webpack.config.js
