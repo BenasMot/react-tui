@@ -2,13 +2,13 @@ import React from "react";
 import { createSceenContext, TestSceenContext } from "../fixtures/context";
 import { Box, Grid, GridItem } from "../../";
 
-describe("aaa", () => {
+describe("Grid", () => {
   let context: TestSceenContext;
   beforeEach(() => {
     context = createSceenContext();
   });
 
-  test("<Grid /> - 3x3", async (t) => {
+  it("<Grid /> - 3x3", async () => {
     const {
       render,
       RootBox,
@@ -48,7 +48,7 @@ describe("aaa", () => {
     expect(screenToString()).toMatchSnapshot();
   });
 
-  test("<Grid /> - 3x3 with colSpan and rowSpan", async (t) => {
+  it("<Grid /> - 3x3 with colSpan and rowSpan", async () => {
     const {
       render,
       RootBox,

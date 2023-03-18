@@ -8,7 +8,7 @@ describe("aaa", () => {
     context = createSceenContext();
   });
 
-  test("<List />", async (t) => {
+  it("<List />", async () => {
     const {
       render,
       RootBox,
