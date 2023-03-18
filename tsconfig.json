@@ -5,6 +5,9 @@
     "strict": true,
     "jsx": "react",
     "esModuleInterop": true,
-    "outDir": "./dist"
-  }
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declaration": true
+  },
+  "exclude": ["examples/", "test/", "scripts/"]
 }
