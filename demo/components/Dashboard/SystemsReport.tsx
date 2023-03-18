@@ -1,5 +1,5 @@
 import React from "react";
-import { List, colors, text } from "../../../src";
+import { List, colors, text } from "@benas_mot/react-tui";
 import { useInterval } from "../../utils/hooks/useInterval";
 
 const systems = [

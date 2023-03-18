@@ -5,13 +5,14 @@ import {
   Checkbox,
   Element,
   Form,
+  Grid,
   Image,
   Line,
   List,
   ListBar,
   ListTable,
-  Log,
   Loading,
+  Log,
   ProgressBar,
   Prompt,
   Question,
@@ -21,8 +22,7 @@ import {
   Text,
   Textarea,
   Textbox,
-} from "../../src/components/primitives";
-import { Grid } from "../../src/components/Grid";
+} from "@benas_mot/react-tui";
 import { button as buttonStyle, demoBorderStyles } from "../utils/styles";
 import { Widgets } from "neo-blessed";
 import { useInterval } from "../utils/hooks/useInterval";
@@ -498,6 +498,6 @@ const examples: Example[] = [
   component: <Element key={i}>{component}</Element>,
 }));
 
-export const PrimitiveShowcase = () => (
-  <ComponentShowcase examples={examples} />
-);
+export const PrimitiveShowcase = () => <ComponentShowcase
+  examples={examples}
+/>;

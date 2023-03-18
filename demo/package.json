@@ -1,0 +1,16 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/dist/index.js",
+  "scripts": {
+    "build": "tsc -p ./examples.tsconfig.json",
+    "start": "node dist/index.js",
+    "demo": "npm run build && npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@benas_mot/react-tui": "file:.."
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import blessed from "neo-blessed";
-import { createBlessedRenderer, debug } from "../";
+import { createBlessedRenderer, debug } from "@benas_mot/react-tui";
 import DemoApp from "./DemoApp";
 
 const screen = blessed.screen({
@@ -27,10 +27,11 @@ const container = blessed.box({
 screen.append(container);
 (global as any).blessedScreen = screen;
 
-function render(DemoApp: React.ElementType) {
+function render(DemoApp: React.ComponentType) {
   const demo = process.argv[2] ? process.argv[2].trim() : "";
   const page = process.argv[3] ? parseInt(process.argv[3], 10) : 0;
   debug(`\n\nrendering <DemoApp />`);
+  // @ts-ignore
   renderBlessed(<DemoApp {...{ screen, demo, page }} />, container);
 }
 
@@ -38,7 +39,8 @@ if (!module.parent) render(DemoApp);
 
 const mod: any = module;
 if (mod.hot) {
-  mod.hot.accept("./examples/DemoApp.js", () =>
-    render(require("./DemoApp").default)
+  mod.hot.accept(
+    "./examples/DemoApp.js",
+    () => render(require("./DemoApp").default),
   );
 }

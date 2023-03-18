@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, colors, text, Textbox, Button } from "../../../src";
+import { Box, colors, text, Textbox, Button } from "@benas_mot/react-tui";
 
 export const buttonStyle = {
   fg: "blue",

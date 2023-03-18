@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, ProgressBar, colors, text } from "../../../src";
+import { Box, ProgressBar, colors, text } from "@benas_mot/react-tui";
 import { useInterval } from "../../utils/hooks/useInterval";
 
 const { Colors256 } = colors;

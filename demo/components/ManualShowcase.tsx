@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Grid } from "../../src/components/Grid";
-import { Box, Element, List, Textbox } from "../../src/components/primitives";
+import { Grid } from "@benas_mot/react-tui";
+import { Box, Element, List, Textbox } from "@benas_mot/react-tui";
 import { demoBorderStyles } from "../utils/styles";
 import { ComponentShowcase, Example } from "./ComponentShowcase";
 

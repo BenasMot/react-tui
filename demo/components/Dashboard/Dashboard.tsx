@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, colors, Grid, text } from "../../../src";
+import { Box, colors, Grid, text } from "@benas_mot/react-tui";
 import { LunarLander } from "./LunarLander";
 import { SystemsReport } from "./SystemsReport";
 import { Journal } from "./Journal";

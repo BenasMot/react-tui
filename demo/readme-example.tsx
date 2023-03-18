@@ -1,6 +1,6 @@
 import React from "react";
 import blessed from "neo-blessed";
-import { createBlessedRenderer } from "../";
+import { createBlessedRenderer } from "../dist";
 const screen = blessed.screen({
   /* ... */
 });

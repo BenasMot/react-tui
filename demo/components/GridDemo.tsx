@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Element, Grid, GridItem } from "../../";
+import { Element, Grid, GridItem } from "@benas_mot/react-tui";
 
 export function GridDemo() {
   return (

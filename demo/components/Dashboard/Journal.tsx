@@ -1,5 +1,5 @@
 import React from "react";
-import { Log, colors, text } from "../../../";
+import { Log, colors, text } from "@benas_mot/react-tui";
 import { Widgets } from "neo-blessed";
 import { useInterval } from "../../utils/hooks/useInterval";
 

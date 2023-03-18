@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "../src/components/primitives";
+import { Box, List } from "@benas_mot/react-tui/";
 import { Widgets } from "neo-blessed";
 import { demoBorderStyles } from "./utils/styles";
 
@@ -102,7 +102,7 @@ class DemoApp extends React.PureComponent<
             "Press Esc or q to go back a screen, or quit!",
           ].join("\n\n")}
         </Box>
-        <list
+        <List
           tid="select-demo"
           left="40%+1"
           width="55%"

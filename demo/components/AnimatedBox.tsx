@@ -1,4 +1,5 @@
 import React from "react";
+import { Box } from "@benas_mot/react-tui";
 
 export function AnimatedBox(props: {
   width?: string;
@@ -20,7 +21,7 @@ export function AnimatedBox(props: {
   });
 
   return (
-    <box
+    <Box
       border={{ type: "line" }}
       height={props.height || "40%"}
       left={position + "%"}

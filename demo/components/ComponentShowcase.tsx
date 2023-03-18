@@ -1,6 +1,5 @@
 import * as React from "react";
-import { Box, Button } from "../../src/components/primitives";
-import { Grid } from "../../src/components/Grid";
+import { Box, Button, Grid } from "@benas_mot/react-tui";
 import { button as buttonStyle, demoBorderStyles } from "../utils/styles";
 
 type ComponentDemoProps = {};
