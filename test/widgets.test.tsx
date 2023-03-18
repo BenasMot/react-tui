@@ -1,13 +1,10 @@
-import ava, { TestInterface } from "ava";
 import React from "react";
 import { getScreen } from "./fixtures/screen";
 import { screenToString } from "./util/screen";
 import { createTestRenderer, settle } from "./fixtures/render";
 import { RootBox } from "./fixtures/components/RootBox";
 
-const test = ava as TestInterface<{}>;
-
-test("<box />", async (t) => {
+it("<box />", async () => {
   const screen = getScreen();
   const renderer = createTestRenderer(screen);
   renderer.render(
@@ -22,10 +19,10 @@ test("<box />", async (t) => {
     </RootBox>
   );
   await settle();
-  t.snapshot(screenToString(screen));
+  expect(screenToString(screen)).toMatchSnapshot();
 });
 
-test("<list />", async (t) => {
+it("<list />", async () => {
   const screen = getScreen();
   const renderer = createTestRenderer(screen);
   renderer.render(
@@ -39,10 +36,10 @@ test("<list />", async (t) => {
     </RootBox>
   );
   await settle();
-  t.snapshot(screenToString(screen));
+  expect(screenToString(screen)).toMatchSnapshot();
 });
 
-test("<list />, long", async (t) => {
+it("<list />, long", async () => {
   const screen = getScreen();
   const renderer = createTestRenderer(screen);
   renderer.render(
@@ -59,5 +56,5 @@ test("<list />, long", async (t) => {
     </RootBox>
   );
   await settle();
-  t.snapshot(screenToString(screen));
+  expect(screenToString(screen)).toMatchSnapshot();
 });

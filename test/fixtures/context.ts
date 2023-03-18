@@ -1,4 +1,3 @@
-import { Implementation } from "ava";
 import { getScreen } from "./screen";
 import { screenToString } from "../util/screen";
 import { createTestRenderer, settle } from "./render";
@@ -13,11 +12,10 @@ export type TestSceenContext = {
   RootBox: typeof RootBox;
   settle: typeof settle;
 };
-export const createSceenContext: Implementation<TestSceenContext> = (t) => {
+export const createSceenContext = (): TestSceenContext => {
   const screen = getScreen();
   const renderer = createTestRenderer(screen);
-  t.context = {
-    ...t.context,
+  return {
     screenToString: () => screenToString(screen),
     screen,
     renderer,

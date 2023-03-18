@@ -1,13 +1,10 @@
-import ava, { TestInterface } from "ava";
 import React from "react";
 import { getScreen } from "./fixtures/screen";
 import { screenToString } from "./util/screen";
 import { createTestRenderer, settle } from "./fixtures/render";
 import { RootBox } from "./fixtures/components/RootBox";
 
-const test = ava as TestInterface<{}>;
-
-test("<box /> updates", async (t) => {
+it("<box /> updates", async () => {
   const screen = getScreen();
   const renderer = createTestRenderer(screen);
   const firstProps = {
@@ -30,13 +27,13 @@ test("<box /> updates", async (t) => {
   renderer.render(<UpdatingStyleBox />);
   // assert first paint OK
   await settle();
-  t.snapshot(screenToString(screen));
+  expect(screenToString(screen)).toMatchSnapshot();
   // update props, assert second paint OK
   setProps(secondProps);
   await settle();
-  t.snapshot(screenToString(screen));
+  expect(screenToString(screen)).toMatchSnapshot();
   // hide content, assert third paint OK
   setIsBoxVisible(false);
   await settle();
-  t.snapshot(screenToString(screen));
+  expect(screenToString(screen)).toMatchSnapshot();
 });

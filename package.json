@@ -14,7 +14,7 @@
     "prebundle:demo": "wait-on scripts/webpack-hmr-log.js && cp scripts/webpack-hmr-log.js ./node_modules/webpack/hot/log.js",
     "start:demo": "sleep 1 && wait-on dist/main.bundle.js && node --inspect dist/main.bundle.js",
     "start": "DEBUG=reconciler:blessed nodemon --inspect -I examples/index",
-    "test": "ava"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
