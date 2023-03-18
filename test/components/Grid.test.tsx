@@ -9,12 +9,7 @@ describe("Grid", () => {
   });
 
   it("<Grid /> - 3x3", async () => {
-    const {
-      render,
-      RootBox,
-      screenToString,
-      settle,
-    } = context;
+    const { render, RootBox, screenToString, settle } = context;
     await render(
       <RootBox>
         <Grid
@@ -24,37 +19,33 @@ describe("Grid", () => {
           cols={3}
           items={[...Array<any>(3)].flatMap((_: undefined, row: number) =>
             [...Array(3)].map(
-              (_: undefined, col: number) => ({
-                row,
-                col,
-                rowSpan: 1,
-                colSpan: 1,
-                render: (props) => (
-                  <Box
-                    border={{ type: "line" }}
-                    style={{ border: { fg: "blue" } }}
-                    {...props}
-                  >
-                    {`${row},${col}`}
-                  </Box>
-                ),
-              } as GridItem),
+              (_: undefined, col: number) =>
+                ({
+                  row,
+                  col,
+                  rowSpan: 1,
+                  colSpan: 1,
+                  render: (props) => (
+                    <Box
+                      border={{ type: "line" }}
+                      style={{ border: { fg: "blue" } }}
+                      {...props}
+                    >
+                      {`${row},${col}`}
+                    </Box>
+                  ),
+                } as GridItem)
             )
           )}
         />
-      </RootBox>,
+      </RootBox>
     );
     await settle();
     expect(screenToString()).toMatchSnapshot();
   });
 
   it("<Grid /> - 3x3 with colSpan and rowSpan", async () => {
-    const {
-      render,
-      RootBox,
-      screenToString,
-      settle,
-    } = context;
+    const { render, RootBox, screenToString, settle } = context;
     const Cell: React.FC<React.ComponentProps<typeof Box>> = (props) => (
       <Box
         {...props}
@@ -86,7 +77,7 @@ describe("Grid", () => {
             },
           ]}
         />
-      </RootBox>,
+      </RootBox>
     );
     await settle();
     expect(screenToString()).toMatchSnapshot();

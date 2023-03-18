@@ -292,27 +292,60 @@ import { Widgets } from "neo-blessed";
 import { RBProps } from "./util/blessed-react-compat";
 import { NodeEventHandler } from "./util/eventHandlers";
 
-export declare const Box: React.FC<RBProps<Widgets.BoxOptions, Widgets.BoxElement>>;
-export declare const Bigtext: React.FC<RBProps<Widgets.BigTextOptions, Widgets.BigTextElement>>;
+export declare const Box: React.FC<RBProps<
+  Widgets.BoxOptions,
+  Widgets.BoxElement
+>>;
+export declare const Bigtext: React.FC<RBProps<
+  Widgets.BigTextOptions,
+  Widgets.BigTextElement
+>>;
 export declare const Button: React.FC<
   RBProps<Widgets.ButtonOptions, Widgets.ButtonElement> & {
     onpress?: NodeEventHandler;
   }
 >;
-export declare const Checkbox: React.FC<RBProps<Widgets.CheckboxOptions, Widgets.CheckboxElement>>;
-export declare const Element: React.FC<RBProps<Widgets.ElementOptions, Widgets.BlessedElement>>;
-export declare const FileManager: React.FC<RBProps<Widgets.FileManagerOptions, Widgets.FileManagerElement>>;
+export declare const Checkbox: React.FC<RBProps<
+  Widgets.CheckboxOptions,
+  Widgets.CheckboxElement
+>>;
+export declare const Element: React.FC<RBProps<
+  Widgets.ElementOptions,
+  Widgets.BlessedElement
+>>;
+export declare const FileManager: React.FC<RBProps<
+  Widgets.FileManagerOptions,
+  Widgets.FileManagerElement
+>>;
 export declare const Form: React.FC<
   RBProps<Widgets.FormOptions, Widgets.FormElement<{}>> & {
     onsubmit?: <T = {}>(data: T) => void;
   }
 >;
-export declare const Input: React.FC<RBProps<Widgets.InputOptions, Widgets.InputElement>>;
-export declare const Image: React.FC<RBProps<Widgets.ImageOptions, Widgets.ImageElement>>;
-export declare const Line: React.FC<RBProps<Widgets.LineOptions, Widgets.LineElement>>;
-export declare const List: React.FC<RBProps<Widgets.ListOptions<any>, Widgets.ListElement>>;
-export declare const ListBar: React.FC<RBProps<Widgets.ListbarOptions, Widgets.ListbarElement>>;
-export declare const ListTable: React.FC<Omit<RBProps<Widgets.ListTableOptions, Widgets.ListTableElement>, "items">>;
+export declare const Input: React.FC<RBProps<
+  Widgets.InputOptions,
+  Widgets.InputElement
+>>;
+export declare const Image: React.FC<RBProps<
+  Widgets.ImageOptions,
+  Widgets.ImageElement
+>>;
+export declare const Line: React.FC<RBProps<
+  Widgets.LineOptions,
+  Widgets.LineElement
+>>;
+export declare const List: React.FC<RBProps<
+  Widgets.ListOptions<any>,
+  Widgets.ListElement
+>>;
+export declare const ListBar: React.FC<RBProps<
+  Widgets.ListbarOptions,
+  Widgets.ListbarElement
+>>;
+export declare const ListTable: React.FC<Omit<
+  RBProps<Widgets.ListTableOptions, Widgets.ListTableElement>,
+  "items"
+>>;
 export declare const Log: React.FC<RBProps<Widgets.LogOptions, Widgets.Log>>;
 export declare const Loading: React.FC<RBProps<
   Widgets.LoadingOptions & {
@@ -321,8 +354,14 @@ export declare const Loading: React.FC<RBProps<
   },
   Widgets.LoadingElement
 >>;
-export declare const Message: React.FC<RBProps<Widgets.MessageOptions, Widgets.MessageElement>>;
-export declare const ProgressBar: React.FC<RBProps<Widgets.ProgressBarOptions, Widgets.ProgressBarElement>>;
+export declare const Message: React.FC<RBProps<
+  Widgets.MessageOptions,
+  Widgets.MessageElement
+>>;
+export declare const ProgressBar: React.FC<RBProps<
+  Widgets.ProgressBarOptions,
+  Widgets.ProgressBarElement
+>>;
 export declare const Prompt: React.FC<
   RBProps<Widgets.PromptOptions, Widgets.PromptElement> & {
     text: string;
@@ -336,23 +375,47 @@ export declare const Question: React.FC<
     onResponse: (response: boolean) => void;
   }
 >;
-export declare const RadioButton: React.FC<RBProps<Widgets.RadioButtonOptions, Widgets.RadioButtonElement>>;
-export declare const RadioSet: React.FC<RBProps<Widgets.RadioSetOptions, Widgets.RadioSetElement>>;
-export declare const ScrollableBox: React.FC<RBProps<Widgets.ScrollableBoxOptions, Widgets.BoxElement>>;
-export declare const ScrollableText: React.FC<RBProps<Widgets.BoxOptions, Widgets.BoxElement>>;
-export declare const Table: React.FC<RBProps<Widgets.TableOptions, Widgets.TableElement>>;
-export declare const Text: React.FC<RBProps<Widgets.TextOptions, Widgets.TextElement>>;
+export declare const RadioButton: React.FC<RBProps<
+  Widgets.RadioButtonOptions,
+  Widgets.RadioButtonElement
+>>;
+export declare const RadioSet: React.FC<RBProps<
+  Widgets.RadioSetOptions,
+  Widgets.RadioSetElement
+>>;
+export declare const ScrollableBox: React.FC<RBProps<
+  Widgets.ScrollableBoxOptions,
+  Widgets.BoxElement
+>>;
+export declare const ScrollableText: React.FC<RBProps<
+  Widgets.BoxOptions,
+  Widgets.BoxElement
+>>;
+export declare const Table: React.FC<RBProps<
+  Widgets.TableOptions,
+  Widgets.TableElement
+>>;
+export declare const Text: React.FC<RBProps<
+  Widgets.TextOptions,
+  Widgets.TextElement
+>>;
 export declare const Textarea: React.FC<
   RBProps<Widgets.TextareaOptions, Widgets.TextareaElement> & {
     onsubmit?: (res: any) => void;
   }
 >;
 export declare const Textbox: React.FC<
-  RBProps<Widgets.TextboxOptions & Widgets.TextareaOptions, Widgets.TextElement> & {
+  RBProps<
+    Widgets.TextboxOptions & Widgets.TextareaOptions,
+    Widgets.TextElement
+  > & {
     onsubmit?: (res: any) => void;
   }
 >;
-export declare const Terminal: React.FC<RBProps<Widgets.TerminalOptions, Widgets.TerminalElement>>;
+export declare const Terminal: React.FC<RBProps<
+  Widgets.TerminalOptions,
+  Widgets.TerminalElement
+>>;
 ```
 
 ## Debugging

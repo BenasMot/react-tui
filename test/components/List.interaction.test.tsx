@@ -2,27 +2,23 @@ import React from "react";
 import { createSceenContext, TestSceenContext } from "../fixtures/context";
 import { Box, List } from "../../src/components/primitives";
 
-describe("aaa", () => {
+describe("List", () => {
   let context: TestSceenContext;
   beforeEach(() => {
     context = createSceenContext();
   });
 
   it("<List />", async () => {
-    const {
-      render,
-      RootBox,
-      screen,
-      screenToString,
-      settle,
-    } = context;
+    const { render, RootBox, screen, screenToString, settle } = context;
     let swapChild: (v: boolean) => void = (v) => {};
     function SwappingRootChild() {
       const [isChildSwapped, _swapChild] = React.useState(false);
       swapChild = _swapChild;
       return (
         <RootBox>
-          {isChildSwapped ? <Box>swapped</Box> : (
+          {isChildSwapped ? (
+            <Box>swapped</Box>
+          ) : (
             <List
               label="some-list"
               border={{ type: "line" }}
