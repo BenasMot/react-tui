@@ -58,7 +58,7 @@ components in `react-tui` are:
 - rendered inside of a [blessed::Screen](https://github.com/embarklabs/neo-blessed#screen-from-node)
 
 ```tsx
-import { Box } from "@dino-dna/react-tui/components";
+import { Box } from "@benas_mot/react-tui/components";
 render(<Box {...props} />);
 /* ^ eventually yields => */ blessed.box(props);
 ```
@@ -77,7 +77,7 @@ Users are responsible for:
 // demo.tsx
 import React from "react";
 import blessed from "neo-blessed";
-import { createBlessedRenderer } from "@dino-dna/react-tui";
+import { createBlessedRenderer } from "@benas_mot/react-tui";
 const screen = blessed.screen({
   /* ... */
 });
@@ -101,7 +101,7 @@ What happens if you just add a bunch of boxes to your app?
 
 ```tsx
 // boxes-on-boxes
-import { Box } from "@dino-dna/react-tui/components";
+import { Box } from "@benas_mot/react-tui/components";
 render(
   <>
     {[...Array(10)].map(_, i) => <Box>{`greetings from box: ${i}`}</Box>}
@@ -117,7 +117,7 @@ from the top to paint the new node.
 
 ```tsx
 // boxes-with-top
-import { Box } from "@dino-dna/react-tui/components";
+import { Box } from "@benas_mot/react-tui/components";
 render(
   <>
     {[...Array(10)].map(_, i) => <Box top={i}>greetings from box: {i}</Box>}
@@ -131,7 +131,7 @@ Much better. Let's try a more _interesting layout_.
 
 ```tsx
 // verbose-4x4
-import { Element, Box } from "@dino-dna/react-tui/components";
+import { Element, Box } from "@benas_mot/react-tui/components";
 render(
   <Element>
     <Box left={0} top={0} width="50%" children={1} />
@@ -152,7 +152,7 @@ example, let's apply _border styles_.
 
 ```tsx
 // verbose-4x4-border-bros
-import { Element, Box } from "@dino-dna/react-tui/components";
+import { Element, Box } from "@benas_mot/react-tui/components";
 const styles = {
   border: { type: "line" },
   style: { border: { fg: "blue" } },
@@ -198,7 +198,7 @@ That may be hard to grok, so let's see the output _first_ this time:
 ![](../img/manual-grid-3x3-with-spans.png)
 
 ```tsx
-import { Element, Box, Grid } from "@dino-dna/react-tui/components";
+import { Element, Box, Grid } from "@benas_mot/react-tui/components";
 render(
   <Grid
     cols={3} // allow us to have 1/3 increment widths
@@ -282,10 +282,10 @@ what you may need to do to enable them in your react components.
 
 ## Component API
 
-Component API exposed from `@dino-dna/react-tui/components`:
+Component API exposed from `@benas_mot/react-tui/components`:
 
 ```tsx
-// node_modules/@dino-dna/react-tui/components/index.d.ts
+// node_modules/@benas_mot/react-tui/components/index.d.ts
 // This md file is probably outdated. check your locally copy instead.
 import * as React from "react";
 import { Widgets } from "neo-blessed";

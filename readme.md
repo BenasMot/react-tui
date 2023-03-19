@@ -1,6 +1,8 @@
 <img src="./img/logo.png" width="150px" />
 
-# @dino-dna/react-tui <!-- omit in toc -->
+# @benas_mot/react-tui <!-- omit in toc -->
+
+## Forked from @dino-dna/react-tui
 
 React in your terminal emulator.
 
@@ -24,9 +26,9 @@ This project was originally a fork of [react-blessed](https://github.com/Yomguit
 ## Install
 
 ```sh
-npm install --prod @dino-dna/react-tui neo-blessed react
+npm install --prod @benas_mot/react-tui neo-blessed react
 # or,
-yarn add @dino-dna/react-tui neo-blessed react
+yarn add @benas_mot/react-tui neo-blessed react
 ```
 
 ## Usage
@@ -48,7 +50,7 @@ before trying to write a nice terminal app.
 // get-started.tsx
 import React from "react";
 import blessed from "neo-blessed";
-import { createBlessedRenderer } from "@dino-dna/react-tui";
+import { createBlessedRenderer } from "@benas_mot/react-tui";
 // setup a blessed screen & container
 const screen = blessed.screen({
   /* ... */
@@ -67,7 +69,7 @@ render(<DemoApp />, container);
 
 We host a variety of runnable demos. To run the the demo app:
 
-- clone, `git clone https://github.com/dino-dna/react-tui react-tui`
+- clone, `git clone https://github.com/benas_mot/react-tui react-tui`
 - `cd react-tui`
 - install dependencies, `npm ci`
 - compile, `npx tsc` (or `npx tsc -w` for watch mode)

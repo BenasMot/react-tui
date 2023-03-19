@@ -210,7 +210,7 @@ export const createReconciler = ({
       internalInstanceHandle: Object
     ) {
       throw new Error(
-        "commitMount not implemented. Please post a reproducible use case that calls this method at https://github.com/dino-dna/react-tui/issues/new"
+        "commitMount not implemented. Please post a reproducible use case that calls this method at https://github.com/benas_mot/react-tui/issues/new"
       );
     },
 
